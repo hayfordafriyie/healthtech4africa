@@ -7,13 +7,12 @@ import '../styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <>
-   <Header /> {/* Include Header on every page */}
+   
       <Component {...pageProps} /> {/* Default page */}
       
       
      
-     
-      <MainPage /> 
+
     </>
   );
 }
