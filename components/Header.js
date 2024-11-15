@@ -24,7 +24,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/about"
+                href="/About"
                 className="text-white hover:text-[#ff6600] transition duration-300 transform hover:scale-110"
               >
                 About
