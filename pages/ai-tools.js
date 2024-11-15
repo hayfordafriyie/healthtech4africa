@@ -2,12 +2,12 @@ import PredictiveModel from '../components/PredictiveModel';
 import HealthTrendChart from '../components/HealthTrendChart';
 import NLPTool from '../components/NLPTool';
 import React from 'react';
-import HealthAI from './components/HealthAI';
-import NutritionAI from './components/NutritionAI';
-import ChildHealthAI from './components/ChildHealthAI';
-import ChildrenRightsAI from './components/ChildrenRightsAI';
-import ChildSocialProtectionAI from './components/ChildSocialProtectionAI';
-import WASHAI from './components/WASHAI';
+import HealthAI from '../components/HealthAI';
+import NutritionAI from '../components/NutritionAI';
+import ChildHealthAI from '../components/ChildHealthAI';
+import ChildrenRightsAI from '../components/ChildrenRightsAI';
+import ChildSocialProtectionAI from '../components/ChildSocialProtectionAI';
+import WASHAI from '../components/WASHAI';
 
 const AITools = () => {
   return (

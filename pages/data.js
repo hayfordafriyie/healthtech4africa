@@ -1,10 +1,10 @@
 import React from 'react';
-import HealthData from './components/HealthData';
-import NutritionData from './components/NutritionData';
-import ChildHealthData from './components/ChildHealthData';
-import ChildrenRightsData from './components/ChildrenRightsData';
-import ChildSocialProtectionData from './components/ChildSocialProtectionData';
-import WASHData from './components/WASHData';
+import HealthData from '../components/HealthData';
+import NutritionData from '../components/NutritionData';
+import ChildHealthData from '../components/ChildHealthData';
+import ChildrenRightsData from '../components/ChildrenRightsData';
+import ChildSocialProtectionData from '../components/ChildSocialProtectionData';
+import WASHData from '../components/WASHData';
 
 const DataDashboard = () => {
   return (
