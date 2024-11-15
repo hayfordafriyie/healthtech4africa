@@ -3,7 +3,7 @@ import React from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faHeart, faAppleAlt, faBook, faGavel } from '@fortawesome/free-solid-svg-icons';
 
-const About = () => {
+const AboutComp = () => {
   return (
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-screen-lg mx-auto text-center">
@@ -90,4 +90,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutComp;

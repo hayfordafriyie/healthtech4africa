@@ -1,6 +1,6 @@
-import About from '../components/About';
+import AboutComp from '../components/About';
 
-const AboutPage ()=> import React from 'react';
+const About ()=> import React from 'react';
 import About from '../components/About';
 
 const AboutPage = () => {
@@ -12,7 +12,7 @@ const AboutPage = () => {
         {/* Card Container with shadow */}
         <div className="bg-white p-8 rounded-lg shadow-2xl">
           {/* Include the About Component */}
-          <About />
+          <AboutComp />
         </div>
         
       </div>
@@ -20,4 +20,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default About;
