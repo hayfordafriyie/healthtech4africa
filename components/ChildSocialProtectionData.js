@@ -32,3 +32,4 @@ const ChildSocialProtectionData = () => {
   );
 };
 
+export default ChildSocialProtectionData;  // Make sure this line is added to export the component

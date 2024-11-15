@@ -84,4 +84,4 @@ const WASHData = () => {
   );
 };
 
-export default WASHData;
+export default WASHData; // Make sure to export the component
