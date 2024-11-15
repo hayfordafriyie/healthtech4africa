@@ -63,7 +63,7 @@ const Header = () => {
           <Link href="/" className="text-white hover:text-gray-300 transition duration-300 hover:font-extrabold">
             <FaHome className="text-2xl" />
           </Link>
-          <Link href="/about" className="text-white hover:text-gray-300 transition duration-300 hover:font-extrabold">
+          <Link href="/About" className="text-white hover:text-gray-300 transition duration-300 hover:font-extrabold">
             <FaInfoCircle className="text-2xl" />
           </Link>
           <Link href="/ai-tools" className="text-white hover:text-gray-300 transition duration-300 hover:font-extrabold">
