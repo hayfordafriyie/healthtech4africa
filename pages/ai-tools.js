@@ -8,10 +8,13 @@ import ChildHealthAI from '../components/ChildHealthAI';
 import ChildrenRightsAI from '../components/ChildrenRightsAI';
 import ChildSocialProtectionAI from '../components/ChildSocialProtectionAI';
 import WASHAI from '../components/WASHAI';
+import Header from '../components/Header';
 
 const AITools = () => {
   return (
     <div className="max-w-screen-lg mx-auto p-6">
+      <Header/>
+      <br/><br/>
       <h1 className="text-3xl font-semibold text-blue-900 mb-12 text-center">
         Our AI Tools
       </h1>

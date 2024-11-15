@@ -10,42 +10,44 @@ const ChildHealthData = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
-      <h2 className="text-2xl font-semibold text-indigo-800 mb-4 flex items-center">
-        <FaChild className="mr-3 text-xl" />
+    <div className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg mb-12">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-indigo-800 mb-4 flex items-center">
+        <FaChild className="mr-3 text-xl sm:text-2xl" />
         Children’s Health Data Insights
       </h2>
-      <p className="text-gray-700 mb-4">
+      <p className="text-gray-700 mb-4 text-sm sm:text-base">
         Visualizing children's health data, including vaccination rates, stunting, and wasting statistics.
       </p>
-      <Bar
-        data={{
-          labels: ['Africa', 'Asia', 'Europe', 'Americas', 'Oceania'],
-          datasets: [
-            {
-              label: 'Vaccination Rates (%)',
-              data: Object.values(childHealthStats.vaccinations),
-              backgroundColor: 'rgb(75, 192, 192)',
-              borderColor: 'rgb(75, 192, 192)',
-              borderWidth: 1,
-            },
-            {
-              label: 'Stunting Rates (%)',
-              data: Object.values(childHealthStats.stunting),
-              backgroundColor: 'rgb(255, 159, 64)',
-              borderColor: 'rgb(255, 159, 64)',
-              borderWidth: 1,
-            },
-            {
-              label: 'Wasting Rates (%)',
-              data: Object.values(childHealthStats.wasting),
-              backgroundColor: 'rgb(54, 162, 235)',
-              borderColor: 'rgb(54, 162, 235)',
-              borderWidth: 1,
-            },
-          ],
-        }}
-      />
+      <div className="w-full h-[300px] sm:h-[400px] md:h-[500px]">
+        <Bar
+          data={{
+            labels: ['Africa', 'Asia', 'Europe', 'Americas', 'Oceania'],
+            datasets: [
+              {
+                label: 'Vaccination Rates (%)',
+                data: Object.values(childHealthStats.vaccinations),
+                backgroundColor: 'rgb(75, 192, 192)',
+                borderColor: 'rgb(75, 192, 192)',
+                borderWidth: 1,
+              },
+              {
+                label: 'Stunting Rates (%)',
+                data: Object.values(childHealthStats.stunting),
+                backgroundColor: 'rgb(255, 159, 64)',
+                borderColor: 'rgb(255, 159, 64)',
+                borderWidth: 1,
+              },
+              {
+                label: 'Wasting Rates (%)',
+                data: Object.values(childHealthStats.wasting),
+                backgroundColor: 'rgb(54, 162, 235)',
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 1,
+              },
+            ],
+          }}
+        />
+      </div>
     </div>
   );
 };

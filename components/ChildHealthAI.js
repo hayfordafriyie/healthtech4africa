@@ -3,7 +3,7 @@ import { FaChild } from 'react-icons/fa';
 import { Line } from 'react-chartjs-2';
 
 const ChildHealthAI = () => {
-  const healthData = [300, 400, 350, 450, 500];
+  const healthData = [300, 400, 350, 450, 500, 800];
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
@@ -16,7 +16,7 @@ const ChildHealthAI = () => {
       </p>
       <Line
         data={{
-          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', ],
           datasets: [
             {
               label: 'Children’s Health Improvement (%)',

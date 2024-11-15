@@ -10,42 +10,44 @@ const HealthData = () => {
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
-      <h2 className="text-2xl font-semibold text-blue-800 mb-4 flex items-center">
-        <FaHeartbeat className="mr-3 text-xl" />
+    <div className="bg-white p-6 sm:p-8 md:p-10 rounded-lg shadow-lg mb-12">
+      <h2 className="text-2xl sm:text-3xl font-semibold text-blue-800 mb-4 flex items-center">
+        <FaHeartbeat className="mr-3 text-xl sm:text-2xl" />
         Health Data Insights
       </h2>
-      <p className="text-gray-700 mb-4">
+      <p className="text-gray-700 mb-4 text-sm sm:text-base">
         Visualizing health data across regions, including disease prevalence and malnutrition rates.
       </p>
-      <Bar
-        data={{
-          labels: ['Africa', 'Asia', 'Europe', 'Americas', 'Oceania'],
-          datasets: [
-            {
-              label: 'Malaria Prevalence (%)',
-              data: Object.values(healthData.malaria),
-              backgroundColor: 'rgb(255, 99, 132)',
-              borderColor: 'rgb(255, 99, 132)',
-              borderWidth: 1,
-            },
-            {
-              label: 'Pneumonia Prevalence (%)',
-              data: Object.values(healthData.pneumonia),
-              backgroundColor: 'rgb(54, 162, 235)',
-              borderColor: 'rgb(54, 162, 235)',
-              borderWidth: 1,
-            },
-            {
-              label: 'Malnutrition Rate (%)',
-              data: Object.values(healthData.malnutrition),
-              backgroundColor: 'rgb(75, 192, 192)',
-              borderColor: 'rgb(75, 192, 192)',
-              borderWidth: 1,
-            },
-          ],
-        }}
-      />
+      <div className="w-full h-[300px] sm:h-[400px] md:h-[500px]">
+        <Bar
+          data={{
+            labels: ['Africa', 'Asia', 'Europe', 'Americas', 'Oceania'],
+            datasets: [
+              {
+                label: 'Malaria Prevalence (%)',
+                data: Object.values(healthData.malaria),
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                borderWidth: 1,
+              },
+              {
+                label: 'Pneumonia Prevalence (%)',
+                data: Object.values(healthData.pneumonia),
+                backgroundColor: 'rgb(54, 162, 235)',
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 1,
+              },
+              {
+                label: 'Malnutrition Rate (%)',
+                data: Object.values(healthData.malnutrition),
+                backgroundColor: 'rgb(75, 192, 192)',
+                borderColor: 'rgb(75, 192, 192)',
+                borderWidth: 1,
+              },
+            ],
+          }}
+        />
+      </div>
     </div>
   );
 };

@@ -9,19 +9,38 @@ const HealthAI = () => {
       {
         label: 'Malaria Cases',
         data: [1000, 1200, 1100, 1300, 1400, 1500],
-        borderColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgb(255, 99, 132)', // Red
+        backgroundColor: 'rgba(255, 99, 132, 0.2)', // Light red for area under the line (if filled)
         fill: false,
         tension: 0.1,
       },
       {
         label: 'Pneumonia Cases',
         data: [500, 700, 650, 800, 700, 750],
-        borderColor: 'rgb(54, 162, 235)',
+        borderColor: 'rgb(54, 162, 235)', // Blue
+        backgroundColor: 'rgba(54, 162, 235, 0.2)', // Light blue
+        fill: false,
+        tension: 0.1,
+      },
+      {
+        label: 'Polio Cases',
+        data: [500, 700, 650, 800, 500, 50],
+        borderColor: 'rgb(75, 192, 192)', // Teal
+        backgroundColor: 'rgba(75, 192, 192, 0.2)', // Light teal
+        fill: false,
+        tension: 0.1,
+      },
+      {
+        label: 'Kwashiokor Cases',
+        data: [50, 100, 150, 500, 500, 150],
+        borderColor: 'rgb(153, 102, 255)', // Purple
+        backgroundColor: 'rgba(153, 102, 255, 0.2)', // Light purple
         fill: false,
         tension: 0.1,
       },
     ],
   };
+  
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg mb-12">
